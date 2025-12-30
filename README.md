@@ -5,3 +5,5 @@ Synthetic data python script creates IoT devices data with random latency and pu
 Synthetic data generator attributes:
 - Values generated for metrics devices: "temperature": "°C", "humidity" "%", "vibration": "g", "co2": "ppm", "sound": "dB"
 - Descriptive attributes: "device_id", "timestamp", "status": ["OK", "WARN", "ALERT"]
+
+Mini-batch is saved with 30 second intervals. Spark is collecting 30 second worth of data and append it to the target S3 file.
