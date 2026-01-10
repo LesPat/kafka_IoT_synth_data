@@ -7,3 +7,5 @@ Synthetic data generator attributes:
 - Descriptive attributes: "device_id", "timestamp", "status": ["OK", "WARN", "ALERT"]
 
 Mini-batch is saved with 30 second intervals. Spark is collecting 30 second worth of data and append it to the target S3 file.
+
+Soon to be recreated with similar flow, maybe with wider range of AWS stack
