@@ -8,18 +8,18 @@ Architecture:
 <img width="581" height="61" alt="image" src="https://github.com/user-attachments/assets/79a19d3c-d0d0-473b-9452-5243ab780ba6" />
 
 Attributes:
-|"device_type" datatype: "string" values:["temperature", "humidity", "vibration", "co2", "sound"]|
-|"device_id" datatype: "string"|
-|"timestamp" datatype: "string (ISO 8601 UTC)"|
-|"status": datatype: "string" values:["OK", "WARN", "ALERT"]|
-|"value" datatype: "number"|
+-|"device_type" datatype: "string" values:["temperature", "humidity", "vibration", "co2", "sound"]|
+-|"device_id" datatype: "string"|
+-|"timestamp" datatype: "string (ISO 8601 UTC)"|
+-|"status": datatype: "string" values:["OK", "WARN", "ALERT"]|
+-|"value" datatype: "number"|
 
--Units for device_type:
-|"temperature": "°C"|
-|"humidity": "%"|
-|"vibration": "g"|
-|"co2": "ppm"|
-|"sound": "dB"|
+Units for device_type:
+-|"temperature": "°C"|
+-|"humidity": "%"|
+-|"vibration": "g"|
+-|"co2": "ppm"|
+-|"sound": "dB"|
 
 
 Trigger interval:
@@ -30,8 +30,8 @@ Components:
 2. spark_data_catcher.py: creates Spark Streaming session which catches generated synthetic data from local host to simulate real-time scenario of collecting sensors readings. Data is sent to the S3 bucket in parquet format
 
 Requirements:
-# Producer (synthetic_data_generator.py)
+-Producer (synthetic_data_generator.py)
 kafka-python==2.0.2
 
-# Streaming (spark_data_catcher.py)
+-Streaming (spark_data_catcher.py)
 pyspark==3.5.3
