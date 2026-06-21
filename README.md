@@ -8,10 +8,10 @@ Architecture:
 <img width="581" height="61" alt="image" src="https://github.com/user-attachments/assets/79a19d3c-d0d0-473b-9452-5243ab780ba6" />
 
 Attributes:
-- |"device_type" datatype: "string" values:["temperature", "humidity", "vibration", "co2", "sound"]|
+- |"device_type" datatype: "string" values: ["temperature", "humidity", "vibration", "co2", "sound"]|
 - |"device_id" datatype: "string"|
 - |"timestamp" datatype: "string (ISO 8601 UTC)"|
-- |"status": datatype: "string" values:["OK", "WARN", "ALERT"]|
+- |"status": datatype: "string" values: ["OK", "WARN", "ALERT"]|
 - |"value" datatype: "number"|
 
 Units for device_type:
